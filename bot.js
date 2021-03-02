@@ -85,6 +85,16 @@ client.on('message', msg => {
   }
 });
 
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'selamın aleykum') {
+    msg.reply('bi siktir git seninle uğraşamam');
+  }
+});
+
+
+
+
 client.elevation = message => {
   if(!message.guild) {
 	return; }
